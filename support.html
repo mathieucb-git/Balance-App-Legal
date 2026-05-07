@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balance – Support</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fafaf9;
+      color: #1c1c1e;
+      line-height: 1.7;
+      padding: 2rem 1rem 5rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .subtitle { color: #6e6e73; font-size: 0.9rem; margin-bottom: 2.5rem; }
+    h2 { font-size: 1.1rem; font-weight: 600; margin: 2.25rem 0 0.5rem; color: #1c1c1e; }
+    p, li { font-size: 0.97rem; color: #3a3a3c; }
+    ul { padding-left: 1.4rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: #4a7c5f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid #e5e5ea; margin: 2.5rem 0; }
+
+    /* Contact card */
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #ffffff;
+      border: 1px solid #e5e5ea;
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      transition: box-shadow 0.15s;
+    }
+    .contact-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); text-decoration: none; }
+    .contact-icon {
+      width: 44px; height: 44px;
+      background: #f2f9f5;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .contact-label { font-size: 0.8rem; color: #6e6e73; margin-bottom: 0.1rem; }
+    .contact-value { font-size: 0.97rem; font-weight: 500; color: #1c1c1e; }
+
+    /* FAQ */
+    details {
+      border: 1px solid #e5e5ea;
+      border-radius: 12px;
+      margin-bottom: 0.75rem;
+      background: #ffffff;
+      overflow: hidden;
+    }
+    summary {
+      padding: 1rem 1.25rem;
+      font-size: 0.97rem;
+      font-weight: 500;
+      color: #1c1c1e;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      font-size: 1.2rem;
+      color: #4a7c5f;
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { content: "−"; }
+    .faq-body {
+      padding: 0 1.25rem 1rem;
+      font-size: 0.95rem;
+      color: #3a3a3c;
+      line-height: 1.65;
+      border-top: 1px solid #f2f2f7;
+    }
+    .faq-body p { margin-top: 0.75rem; }
+    .faq-body ul { margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Support</h1>
+    <p class="subtitle">Balance App &nbsp;·&nbsp; We're here to help</p>
+
+    <!-- Contact -->
+    <h2>Contact us</h2>
+    <p>Have a question, a bug to report, or feedback? Reach out — we respond within 1–2 business days.</p>
+    <a class="contact-card" href="mailto:hello@balance-app.io">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">Email support</div>
+        <div class="contact-value">hello@balance-app.io</div>
+      </div>
+    </a>
+
+    <hr />
+
+    <!-- FAQ -->
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>How does the partner linking work?</summary>
+      <div class="faq-body">
+        <p>When you invite your partner, their email is saved to your shared household. When they download Balance and <strong>sign up with that same email address</strong>, they are automatically linked to your account — no code or extra step needed.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>My partner didn't receive the invite email. What should I do?</summary>
+      <div class="faq-body">
+        <p>The invite is sent from your own email app (Mail, Gmail, etc.), so check that you actually tapped Send before closing it. You can re-open the pre-filled email from the invite screen at any time.</p>
+        <p>If your partner still didn't receive it, try sharing the invite link via Messages instead — use the <strong>"Share invite link"</strong> button on the invite confirmation screen.</p>
+        <p>The most important thing is that your partner signs up with <strong>the exact email address you entered</strong>. The linking is based on email, not the message itself.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can we both answer on the same device?</summary>
+      <div class="faq-body">
+        <p>Yes. On the invite screen, choose <strong>"Answer now"</strong> instead of "Invite by email". This lets your partner complete their assessment on your device. Their answers are saved separately so you can still compare perspectives.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What are the four mental load categories?</summary>
+      <div class="faq-body">
+        <ul>
+          <li><strong>Operational</strong> — Tangible, countable tasks: dishes, laundry, groceries.</li>
+          <li><strong>Cognitive</strong> — Invisible background work: planning, tracking, anticipating needs.</li>
+          <li><strong>Emotional</strong> — Diffuse but persistent: managing moods, holding space, maintaining relationships.</li>
+          <li><strong>Coordination</strong> — Fragmented and underestimated: scheduling, following up, adjusting plans.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is the weekly check-in?</summary>
+      <div class="faq-body">
+        <p>The check-in is a shorter set of questions available once a week. It helps you track how the distribution of tasks shifts over time and keeps the conversation going between full assessments.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I delete my account and data?</summary>
+      <div class="faq-body">
+        <p>You can request account deletion by emailing us at <a href="mailto:hello@balance-app.io">hello@balance-app.io</a> with the subject line <strong>"Delete my account"</strong>. We will permanently delete your account and all associated data within 30 days.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is my data shared with my partner?</summary>
+      <div class="faq-body">
+        <p>Yes — that's the core of Balance. Your assessment answers are shared with the other member of your household so you can compare how each of you perceives the distribution of tasks. No data is shared outside your household. See our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Does Balance work without a partner account?</summary>
+      <div class="faq-body">
+        <p>You can complete your own assessment and see your personal results at any time. The perception-gap comparison and joint summary require both partners to have answered. You can use the <strong>"Answer now"</strong> option on the same device to unlock this view without a second account.</p>
+      </div>
+    </details>
+
+    <hr />
+
+    <p style="font-size:0.88rem; color:#6e6e73;">
+      Balance &nbsp;·&nbsp; <a href="privacy-policy.html">Privacy Policy</a>
+    </p>
+
+  </div>
+</body>
+</html>
